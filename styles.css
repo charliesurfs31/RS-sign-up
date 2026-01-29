@@ -1,23 +1,33 @@
 * {
     appearance: none;
+    margin: 0;
+    padding: 0;
 }
 
-
 .blevins-image {
-  width: 25vw;
-  height: 100vh;
+  width: 33vw;
+  height: 100%;
   object-fit: cover;
   object-position: center;
   position: absolute;
-
 }
 
-header {
+
+
+.top-text {
     position: relative;
-    margin-left: 500px;
+    margin-left: 40vw;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .sign-up-form {
     position: relative;
-    margin-left: 500px;
+    margin-left: 40vw;
+    margin-bottom: 100px;
+}
+
+.bottom-text {
+    position: relative;
+    margin-left: 40vw;
 }
