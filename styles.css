@@ -1,0 +1,23 @@
+* {
+    appearance: none;
+}
+
+
+.blevins-image {
+  width: 25vw;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+
+}
+
+header {
+    position: relative;
+    margin-left: 500px;
+}
+
+.sign-up-form {
+    position: relative;
+    margin-left: 500px;
+}
