@@ -10,9 +10,17 @@
   object-fit: cover;
   object-position: center;
   position: absolute;
+  z-index: 1;
 }
 
-
+.logo {
+  position: absolute;
+  height: 25%;
+  width: auto;
+  z-index: 2;
+  margin-top: 40vh;
+  margin-left: 120px;
+}
 
 .top-text {
     position: relative;
@@ -22,12 +30,28 @@
 }
 
 .sign-up-form {
-    position: relative;
-    margin-left: 40vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     margin-bottom: 100px;
+    background-color: #e5e7eb;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.form-row {
+    padding: 10px;
 }
 
 .bottom-text {
     position: relative;
     margin-left: 40vw;
+}
+
+.photo-credit {
+    color: white;
+    position: absolute;
+    z-index: 2;
+    margin-left: 150px;
+    margin-top: 45vh;
 }
