@@ -1,7 +1,23 @@
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('SF-Pro-Display-Regular.otf') format('opentype'); /* Adjust path and format */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Pro Normal';
+  src: url('SF-Pro.ttf') format('truetype'); /* Adjust path and format */
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 * {
     appearance: none;
     margin: 0;
     padding: 0;
+    font-family: 'SF Pro Normal', sans-serif;
 }
 
 .blevins-image {
@@ -28,6 +44,7 @@
     margin-left: 40vw;
     padding-top: 50px;
     padding-bottom: 50px;
+    font-family: 'SF Pro Display', serif;
 }
 
 
@@ -44,6 +61,7 @@
     padding: 10px;
     padding-left: 0%;
     padding-right: 30px;
+    border-radius: 10px;
 }
 
 .first-column {
@@ -63,6 +81,29 @@ label {
     margin-top: 5px;
 }
 
+input {
+  border: 2px solid #000;
+  margin-bottom: 15px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+
+input:focus {
+    border: 2px solid blue;
+    box-shadow: 5px 5px 5px darkgray;
+}
+
+.create-account:focus {
+    border: 2px solid black;
+    box-shadow: 5px 5px 5px darkgray;
+}
+
+
+
 .bottom-text {
     position: relative;
     margin-left: 40vw;
@@ -70,12 +111,28 @@ label {
 
 .create-account {
     margin-bottom: 50px;
+    padding: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: darkred;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+.log-in {
+    font: sans-serif;
+    background-color: transparent;
+    border: none;
+    color: blue;
+    font-weight: bold;
 }
 
 .photo-credit {
     color: white;
-    position: relative;
+    position: absolute;
     z-index: 2;
     margin-left: 150px;
-    margin-top: 50px;
+    margin-top: 100px;
 }
